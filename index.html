@@ -13,29 +13,28 @@
                     sit <span class="green-bold">on</span> chair
                 </p>
             </div>
-            <!-- <div id="menu">
-                <ul>
-                    <li>
-                        o firmie
-                    </li>
-                    <li>
-                        galeria
-                    </li>
-                    <li>
-                        kontakt
+            <div id="menu">
+                <ul id="dropdown">
+                    <li><a href="#">kontakt</a></li>
+                    <li><a href="#">galeria</a></li>
+                    <li><a href="#">o firmie</a>
+                        <ul>
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Nasz team</a></li>
+                            <li><a href="#">Historia</a></li>
+                        </ul>
                     </li>
                 </ul>
-
-            </div> -->
+            </div>
         </div>
 
     </header>
 
     <section id="slider" class="background-gradient">
         <div class="container">
-            <!-- <div class="sign">
+            <div id="sign-left">
                 &lt;
-            </div> -->
+            </div>
             <div class="img-slider">
                 <img src="images/black_chair.png" />
             </div>
@@ -46,9 +45,9 @@
                 </p>
                 <button>zobacz więcej</button>
             </div>
-            <!-- <div class="sign">
+            <div id="sign-right">
                 &gt;
-            </div> -->
+            </div>
 
         </div>
     </section>
@@ -190,9 +189,12 @@
             </div>
             <div id="form-right">
                 <img src="images/red_chair.png" alt="Czerwony fotel">
-                <p>
-                    <label><input class="checkbox" type="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
-                </p>
+                <div>
+                    <input class="checkbox" type="checkbox" />
+                    <label>
+                        Zgadzam się na przetwarzanie danych osobowych
+                    </label>
+                </div>
                 <button type="button" name="button">WYŚLIJ</button>
             </div>
             <div id="footer-left">

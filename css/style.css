@@ -92,13 +92,70 @@ button {
     color: rgb(39,199,171);
     font-weight: bold;
 }
-/*#menu {
+#menu {
     text-transform: uppercase;
     color: white;
+	line-height: 40px;
 }
 #menu li  {
-    float: right;
-}*/
+	font-size: 16px;
+	list-style: none;
+	float: right;
+	padding-left: 50px;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li
+{
+    display: block;
+    position: relative;
+    float: left;
+}
+
+li ul
+{
+    display: none;
+}
+
+ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 15px 0 15px;
+}
+
+li ul li a
+{
+	text-transform: none;
+	width: 125px;
+	position: relative;
+	left: -60px;
+	top: 10px;
+}
+
+li:hover ul
+{
+    display: block;
+    position: absolute;
+}
+
+li:hover li
+{
+    float: none;
+    font-size: 11px;
+}
+
+li:hover a
+{
+    background: black;
+}
+
 .background-gradient {
     background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 81%, rgba(237,237,237,1) 100%);
@@ -113,22 +170,33 @@ button {
     height: 500px;
     padding: 125px;
 }
-.sign {
-    font-size: 100px;
+#sign-left {
+    font-size: 80px;
     color: rgb(39,199,171);
+	float: left;
+	position: relative;
+	bottom: -100px;
 }
+#sign-right {
+    font-size: 80px;
+    color: rgb(39,199,171);
+	float: right;
+	position: relative;
+	bottom: -100px;
+}
+
 .img-slider {
-    width: 400px;
+    width: 470px;
     float: left;
 }
 .text-slider {
-    width: 640px;
+    width: 470px;
     text-align: center;
     float: left;
     padding: 50px 50px 50px 0;
 }
 .text-slider>p {
-    margin: 50px 0;
+    margin: 25px 0;
 }
 #chairs {
 	height: 350px;
@@ -340,6 +408,7 @@ footer {
 	font-size: 30px;
 	line-height: 65px;
 	color: #e6e6e6;
+	padding-bottom: 125px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -374,27 +443,16 @@ footer {
 	height: 70px;
 	font-size: 30px;
 	font-weight: bold;
+	position: relative;
+	bottom: -70px;
 }
 #form-right>img {
 	margin-left: 48px;
 }
-/*
-label {
-	color: #bcbaba;
-	display: inline-block;
-}
 
 .checkbox {
-	width: 40px;
-	height: auto;
-	margin-bottom: 25px;
-	padding-left: 10px;
-	border: 1px solid #a3e2d7;
-	font-size: 30px;
-	line-height: 65px;
-	color: #e6e6e6;
-	display: block;
-}*/
+	appearance: none;
+}
 
 #footer-left {
 	display: inline-block;
